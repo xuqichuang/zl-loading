@@ -1,18 +1,13 @@
-# zl-loading
+### zlLoading
+> loading 动态加载
+###### 使用方法
+> js
 
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
 ```
+import 'ZlLoading' from 'zl-loading'
+Vue.use(ZlLoading)
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+this.$loading.show('circle',{text:'加载中...­',type:'wave'})
+参数1 目前可选loading样式:  circle, accordion, double-circle, heart, rotate-circle, scale-circle
+参数2 目前可选文字: {text: 自己定义的 text值, type: 目前只支持 wave},可以不传，使用默认值
+```
