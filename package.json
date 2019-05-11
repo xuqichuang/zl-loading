@@ -1,9 +1,9 @@
 {
   "name": "zl-loading",
-  "description": "A Vue.js project",
+  "description": "loading组件",
   "version": "1.0.0",
   "author": "(徐其闯 <xqc1319681561@163.com>)",
-  "main": "dist/zl-vue-ui.js",
+  "main": "dist/zl-loading.js",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -34,6 +34,7 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
+    "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",

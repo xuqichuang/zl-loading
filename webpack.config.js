@@ -2,10 +2,12 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/plugins',
+  // entry: './src/main.js',
+  entry: './src/plugins/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
+    // filename: 'build.js'
     filename: 'zl-loading.js',
     library: 'zl-loading',
     libraryTarget: 'umd',
@@ -69,9 +71,12 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
+      sourceMap: false,
       compress: {
-        warnings: false
+        warnings: false,
+        // 取消打印
+        drop_debugger: true,
+        drop_console: true
       }
     }),
     new webpack.LoaderOptionsPlugin({

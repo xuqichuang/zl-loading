@@ -11,9 +11,10 @@ export default {
     }
     $vm.show = false;
     let loading = {
-        show(text) {
+        show(type, content) {
             $vm.show = true;
-            $vm.title = text;
+            $vm.type = type;
+            $vm.content = content;
         },
         hide() {
             $vm.show = false;
